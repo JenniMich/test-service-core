@@ -41,6 +41,8 @@ if ($metodo === 'GET' && $id === 'rol' && $sub !== null) {
     $rows = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     $stmt->close(); $db->close();
     responder(200, $rows);
+
+    //ya lo cree
 }
 
 // PATCH /usuarios/:id/estado
